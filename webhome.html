@@ -932,8 +932,9 @@
                                 userUpdateData.correctAnswers = [];
                             }
                             userUpdateData.correctAnswers.push({ questionNumber: selectedTargetNumber, timestamp });
-                            */
+                           
                             await updateDoc(userUpdateRef, { correctAnswers: userUpdateData.correctAnswers });
+                             */
                             await hideCardsWithHighValues(uid, questionNumber); // ซ่อนการ์ดเมื่อผู้ใช้ตอบถูก
 
                         }
